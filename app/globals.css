@@ -87,3 +87,12 @@
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
 }
+@layer components {
+  .gradient-text {
+    @apply 
+    font-extrabold uppercase
+    text-transparent bg-clip-text
+    bg-gradient-to-r from-orange-300 
+    to-orange-500
+  }
+}
