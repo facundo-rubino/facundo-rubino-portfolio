@@ -1,73 +1,111 @@
 export const navItems = [
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
-    { name: "Contact", link: "#contact" },
+    { name: "Experience", link: "#experience",icon: '<FaLaptop />'  },
+    { name: "Projects", link: "#projects" ,icon: '<FaLaptopCode />' },
+    { name: "Contact", link: "#contact", icon: '<FaLaptop />'  },
   ];
   
-  export const gridItems = [
+  export const techs = [
     {
-      id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
-      description: "",
-      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-      imgClassName: "w-full h-full",
-      titleClassName: "justify-end",
-      img: "/b1.svg",
-      spareImg: "",
+        name: 'HTML',
+        icon: 'SiHtml',
+        color: 'bg-gray-900',
     },
     {
-      id: 2,
-      title: "I'm very flexible with time zone communications",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-      imgClassName: "",
-      titleClassName: "justify-start",
-      img: "",
-      spareImg: "",
+        name: 'JavaScript',
+        icon: 'SiJavascript',
+        color: 'bg-gray-900',
     },
     {
-      id: 3,
-      title: "My tech stack",
-      description: "I constantly try to improve",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-      imgClassName: "",
-      titleClassName: "justify-center",
-      img: "",
-      spareImg: "",
+        name: 'Typescript',
+        icon: 'SiTypescript',
+        color: 'bg-gray-900',
     },
     {
-      id: 4,
-      title: "Tech enthusiast with a passion for development.",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-start",
-      img: "/grid.svg",
-      spareImg: "/b4.svg",
-    },
-  
-    {
-      id: 5,
-      title: "Currently building a JS Animation library",
-      description: "The Inside Scoop",
-      className: "md:col-span-3 md:row-span-2",
-      imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-      titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
-      spareImg: "/grid.svg",
+        name: 'React',
+        icon: 'SiReact',
+        color: 'bg-blue-500',
     },
     {
-      id: 6,
-      title: "Do you want to start a project together?",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-      img: "",
-      spareImg: "",
+        name: 'Next.js',
+        icon: 'SiNextDotJs',
+        color: 'bg-gray-900',
     },
-  ];
+    {
+        name: 'Angular',
+        icon: 'SiAngular',
+        color: 'bg-gray-900',
+    },
+    {
+        name: 'Css',
+        icon: 'SiCSS',
+        color: 'bg-blue-500',
+    },
+    {
+        name: 'Scss',
+        icon: 'SiScss',
+        color: 'bg-blue-500',
+    },
+    {
+        name: 'TailwindCSS',
+        icon: 'SiTailwindcss',
+        color: 'bg-blue-500',
+    },
+    {
+        name: 'Node.js',
+        icon: 'SiNodeDotJs',
+        color: 'bg-green-500',
+    },
+    {
+        name: 'MongoDB',
+        icon: 'SiMongodb',
+        color: 'bg-green-500',
+    },
+    {
+        name: 'Firebase',
+        icon: 'SiFirebase',
+        color: 'bg-yellow-500',
+    },
+    {
+        name: 'Figma',
+        icon: 'SiFigma',
+        color: 'bg-purple-500',
+    },
+    {
+        name: 'Adobe Photoshop',
+        icon: 'SiAdobephotoshop',
+        color: 'bg-blue-500',
+    },
+    {
+        name: 'Adobe Illustrator',
+        icon: 'SiAdobeillustrator',
+        color: 'bg-blue-500',
+    },
+    {
+        name: 'Adobe After Effects',
+        icon: 'SiAdobeaftereffects',
+        color: 'bg-blue-500',
+    },
+    {
+        name: 'SQL',
+        icon: 'Simysql',
+        color: 'bg-red-500',
+    },
+    {
+        name: 'GitHub',
+        icon: 'SiGithub',
+        color: 'bg-gray-900',
+    },
+    {
+        name: 'C#',
+        icon: 'SiCsharp',
+        color: 'bg-gray-900',
+    },
+    {
+        name: 'EntityFramework',
+        icon: 'SiEntityframework',
+        color: 'bg-gray-900',
+    },
+]
   
   export const projects = [
     {
@@ -104,38 +142,6 @@ export const navItems = [
     },
   ];
   
-  export const testimonials = [
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-  ];
   
   export const companies = [
     {
@@ -173,29 +179,29 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Conceptualización      ",
+      desc: "Se definen objetivos y se generan ideas creativas para establecer las bases del diseño.",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
+      title: "Investigación",
+      desc: "Se recopila información clave sobre el proyecto, usuarios y mercado para fundamentar el diseño.",
+      className: "md:col-span-2",
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
+      title: "Diseño",
+      desc: "Se convierten las ideas en bocetos y prototipos, visualizando la estructura y funcionalidad del proyecto.",
+      className: "md:col-span-2", 
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      title: "Resultado",
+      desc: "Se lanza el producto, para posteriormente evaluar su desempeño y se obtiene feedback para mejoras futuras. ",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },
@@ -215,3 +221,44 @@ export const navItems = [
       img: "/link.svg",
     },
   ];
+
+  export const education = [
+    {
+        company: "Universidad ORT Uruguay | Abr 2022 - Actualidad",
+        title: 'Analista en Tecnologías de la Información',
+        date: 'Abr 2022',
+        description: `Estoy adquiriendo una comprensión más profunda de los aspectos técnicos
+        y funcionales del desarrollo backend. Permitiendome abordar proyectos de manera más integral,
+        con la capacidad de realizar desafíos complejos.`
+    },
+    {
+        company: "Universidad ORT Uruguay | Abr 2018 - May 2024",
+        title: 'Licenciatura en diseño multimedia',
+        date: 'Abr 2018',
+        description: `Llevar a cabo el desarrollo de sitios desde el inicio, comenzando por UX/UI,
+        para luego aplicar conocimientos de desarrollo Frontend adquiridos. Visualizar el diseño
+        desde una perspectiva técnica y comprender cómo se traduce en código.`
+    },
+]
+
+export const experiencie = [
+  {
+      company: "Universidad ORT Uruguay | Jul 2023 - Actualidad",
+      title: 'Desarrollador de software ',
+      date: 'Jul 2023',
+      description: `Actualmente, trabajo en el desarrollo de sistemas para la universidad,
+      como programador Frontend. En nuestro entorno de trabajo, utilizamos la última versión
+      de Angular, además  de consumir nuestras propias APIs. Esta experiencia también me brinda
+      la libertad de participar activamente en el proceso que se lleva a cabo en el backend.`
+  },
+  {
+      company: "Publicis Impetu | Set 2021 - Nov 2022",
+      title: 'Diseñador Web-Digital ',
+      date: 'Set 2021',
+      description: `Esta etapa de mi vida me permitió mejorar la gestión del tiempo,
+      la adaptabilidad,la creatividad, el trabajo en equipo, la resolución de problemas
+      y la capacidad de lidiar con el estrés en entornos dinámicos. Además,
+      adquirí experiencia en HTML, CSS, JavaScript, frameworks populares, diseño responsivo,
+      UI/UX, desarrollo con WordPress y la creación de mailings y landings.`
+  },
+]
