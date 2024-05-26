@@ -1,29 +1,46 @@
 import { TypeAnimation } from 'react-type-animation'
-import { FaGithub, FaLinkedin , FaArrowAltCircleRight} from "react-icons/fa";
+import { FaArrowAltCircleRight} from "react-icons/fa";
 import React from 'react'
 import MagicButton from './ui/MagicButton';
+import { useTheme } from 'next-themes';
+import { TypewriterEffect } from './ui/TypeWriter';
+import fotoFacu from '@/public/fotoCirculo.png'
+import Image from 'next/image'
 
 
-const Hero = (props:any) => {
-    const Lang = props.Lang;
+
+const Hero = () => {
 
     return (
  <>
-        <section className="pb-20 pt-36">
-        <div className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03]
-        bg-grid-black/[0.03] flex items-center justify-center absolute top-0 left-0">
-      <div className="absolute pointer-events-none inset-0 flex items-center
-      justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"/>
+        <section className="hero h-screen pb-20 pt-20">
+        <div  className="h-screen w-full dark:bg-blue-900 bg-white dark:bg-grid-white/[0.01]
+        bg-grid-black/[0.02] flex items-center justify-center absolute top-0 left-0">
+     <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white" 
+         style={{ 
+           backgroundColor: 'hsla(0,0%,0%, 0)', 
+           backgroundImage: `
+           radial-gradient(at 100% 0%, hsla(25,95%,53%,0.2) 0px, transparent 60%),
+           radial-gradient(at 1% 0%, hsla(31,97%,72%,0.2) 0px, transparent 60%)
+           ` 
+         }} 
+    />
+
     </div>
 
-    <div className="flex justify-center relative my-20 z-10 ">
+    <div className="flex flex-col justify-center relative my-20 z-10 ">
+    <div className="flex items-center justify-center h-4/5  mb-10 ">
+                <div className="relative mx-auto bg-gradient-to-b from-transparent rounded-full w-60 h-60 mt-5 overflow-hidden content-center">
+                    <Image src={fotoFacu} layout="" alt="Foto de Facundo Rubino" objectFit="" />
+                </div>
+     </div>
         <div className="max-w-[89vw] md:max-2-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
         <h2 className="text-4xl font-black uppercase text-transparent bg-clip-text
         bg-gradient-to-r from-orange-300 to-orange-500">
           <span className="gradient-text">Facu</span>
-          <span className="text-transparent bg-clip-text bg-white">ndo Rubino</span>.
+          <span className="text-transparent bg-clip-text bg-blue-900 dark:bg-white" >ndo Rubino</span>.
         </h2>
-        <div className="text-left w-full">
+        <div className="text-left w-full pt-1">
         <TypeAnimation
                         sequence={[
                             'Soy diseñador multimedia.',
@@ -39,14 +56,18 @@ const Hero = (props:any) => {
                         speed={50}
                         style={{
                             fontSize: '1.5rem',
-                            fontWeight: '300',
-                            color: 'white',
+                            fontWeight: '400',
+                            color: '#f97316',
+                            textAlign: 'center',
+
                             
                         }}
                         repeat={Infinity}
                     />
         </div>
-        <a href="#"><MagicButton title="Contactame" icon={<FaArrowAltCircleRight />} position="right"/></a>
+        <a href="#about" className="mt-5">
+            <MagicButton title="CONOCÉ MÁS" icon={<FaArrowAltCircleRight />} position="right"/>
+            </a>
         </div>
     </div>
         </section>

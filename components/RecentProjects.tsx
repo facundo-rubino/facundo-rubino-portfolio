@@ -6,8 +6,8 @@ import { FaLocationArrow } from 'react-icons/fa'
 const RecentProjects = () => {
   return (
     <section className="py-20" id="proyectos">
-        <h1 className="heading">A small selection of {' '}
-        <span className="text-red-400">recent projects</span>
+        <h1 className="heading">Algunos de mis {' '}
+        <span className="text-orange-400">últimos proyectos</span>
         </h1>
         <section className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map(({

@@ -1,8 +1,8 @@
 "use client";
-
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import { FaLaptopCode, FaRegBuilding, FaRegFileAlt, FaRegUser } from "react-icons/fa";
+import { FaLaptopCode, FaRegBuilding, FaRegUser } from "react-icons/fa";
 import Hero from "@/components/Hero";
 
 import RecentProjects from "@/components/RecentProjects";
@@ -11,9 +11,16 @@ import WorkProcess from "@/components/WorkProcess";
 import Experience from "@/components/Experience";
 import useReadingProgress from "@/hooks/useReadingProgress";
 import Tools from "@/components/Tools";
+import About from "@/components/About";
 
 export default function Home() {
   const readingProgress = useReadingProgress();
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
 
   return (
     <>
@@ -27,12 +34,12 @@ export default function Home() {
         { name: "Contacto", link: "#contacto", icon: <FaRegUser /> },
       ]
     } />
-    <main className="relative dark:bg-black-100  overflow-hidden mx-auto sm:px:10 px-5">
+    <main className="relative justify-center dark:bg-black-100  overflow-hidden mx-auto sm:px:10 px-5">
      <Hero/>
-    <div className="md:w-5/6 flex justify-center items-centered
-    flex-col align-middle">
-     <WorkProcess/>
+    <div className="md:w-5/6 m-auto">
      <Experience/>
+     <WorkProcess/>
+     <About/>
      <Tools/>
      <RecentProjects/>
     </div>

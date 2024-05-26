@@ -10,7 +10,7 @@ const Tools = () => {
        </div>
        <div className="flex flex-wrap mb-5 w-10/12 justify-center items-center m-auto md:w-6/12">
          {techs.map((tech, index) => (
-           <div className="flex-shrink-0 p-2  ">
+           <div className="flex-shrink-0 p-2">
              <div className="bg-slate-100 dark:bg-slate-900/[0.8] border border-slate-800 rounded-md p-2">
                {tech.name}
              </div>
