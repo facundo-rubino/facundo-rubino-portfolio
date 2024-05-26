@@ -4,13 +4,14 @@ import { experiencie, education } from '@/data'
 
 const Experience = () => {
   return (
-    <section id="experiencia" className="flex py-20">
-           <h1 className="heading"> {' '}
-        <span className="text-orange-300">experiencia</span>
+    <section id="experiencia">
+           <h1 className="heading">La formación de <br/>
+        <span className="text-orange-500">mi camino</span>
         </h1>
-    <div className="flex flex-col lg:flex-row justify-between">
+    <section className="flex">
+    <div className="flex flex-col lg:flex-row justify-between pt-10">
+      <span className="pl-8 text-sm text-black dark:text-orange-200">Experiencia laboral</span>
       <div className="w-full lg:w-5/12">
-        <h3 className="text-xl font-normal pt-10 pl-8 sm:pl-32 text-slate-900 dark:text-slate-200">| Experiencia</h3>
         {experiencie.map(({
             date,
             title,
@@ -20,8 +21,8 @@ const Experience = () => {
            <VerticalTimeline key={title} date={date} title={title} place={company} desc={description}/>
         ))}
         </div>
-      <div className="w-full mt-16 lg:mt-0 lg:w-5/12">
-        <h3 className="text-xl font-normal pt-10 pl-8 sm:pl-32 text-slate-900 dark:text-slate-200">| Eduación</h3>
+      <div className="w-full mt-8 lg:mt-0 lg:w-5/12">
+      <span className="pl-8  text-sm text-black dark:text-orange-200">Experiencia académica</span>
         {education.map(({
             date,
             title,
@@ -32,6 +33,7 @@ const Experience = () => {
         ))}
         </div>
         </div>
+        </section>
         </section>
   )
 }

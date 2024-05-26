@@ -3,10 +3,12 @@ import React from 'react'
 
 const Tools = () => {
   return (
-       <section>
+       <section  className="my-20" >
+    <h1 className="heading text-orange-500">Tecnologías{' '}
+    <span className="text-black">que manejo</span>
+    </h1>
+         <p className="text-center dark:text-slate-200 py-2">A lo largo de los años fui desarrollando nuevas y complementarias habilidades</p>
        <div>
-         <h3 className="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r uppercase from-orange-300 to-orange-500">Tecnologías que manejo</h3>
-         <p className="text-center dark:text-slate-200 py-3">A lo largo de los años fui desarrollando nuevas habilidades</p>
        </div>
        <div className="flex flex-wrap mb-5 w-10/12 justify-center items-center m-auto md:w-6/12">
          {techs.map((tech, index) => (

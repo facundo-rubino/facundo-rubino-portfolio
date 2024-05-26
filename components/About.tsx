@@ -4,9 +4,9 @@ const About = () => {
   return (
     <section id="about" className="flex flex-col lg:flex-row">
       <h1 className="heading">Un poco más{' '}
-        <span className="text-orange-400">sobre mi</span>
+        <span className="text-orange-500">sobre mi</span>
         </h1>
-      <div className="pl-4 mt-4 border-l-2 border-l-orange-300">
+      <div className="pl-4 mt-5 border-l-2 border-l-orange-300">
       <p>
       La poderosa combinación de la <b>programación</b> con las <b>artes gráficas</b> fue algo que siempre me interesó.
                             Creo firmemente que al fusionar estos dos campos se crean perfiles con un <b>diferencial único</b> ,

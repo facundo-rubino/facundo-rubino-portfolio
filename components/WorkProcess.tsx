@@ -4,10 +4,9 @@ import { Button } from './ui/MovingBorders'
 
 const WorkProcess = () => {
   return (
-    <section  className="py-20" >
-    <h1 className="heading">Proceso de trabajo {' '}<br/>
-    <span className="text-red-400">trust pro</span>
-    <span>Para llegar a los resultados deseados, es necesario cumplir con todas las etapas previas de diseño requeridas</span>
+    <section  className="my-20" >
+    <h1 className="heading">La clave de cada pieza es realizar el correcto {' '}<br/>
+    <span className="text-orange-500">proceso de trabajo</span>
     </h1>
     <section className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
         {workProcess.map((card, index) => (
