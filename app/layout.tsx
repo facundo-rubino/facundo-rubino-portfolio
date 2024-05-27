@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
-import Loader from "@/components/Loader"; 
 
 const sourceSans = Source_Sans_3({ subsets: ["latin"] });
 
