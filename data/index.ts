@@ -170,7 +170,7 @@
     {
       id: 2,
       img: "/insta.svg",
-      link: "",
+      link: "https://www.instagram.com/facundo_rubino_ca4",
     },
     {
       id: 3,
