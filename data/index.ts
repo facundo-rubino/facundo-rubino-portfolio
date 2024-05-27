@@ -120,9 +120,9 @@ export const navItems = [
       id: 2,
       title: "Finales NBA ID",
       des: "Id para el canal NBA Tv en el que se promocionan las finales de la NBA .",
-      img: "/p2.svg",
+      img: "/nbaId.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      link: "https://youtu.be/MJTZl8ys2kU",
     },
     {
       id: 3,
