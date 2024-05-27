@@ -34,7 +34,7 @@ const Hero = () => {
 
     </div>
 
-    <div className="flex flex-col md:flex-row md:gap-80 justify-center relative my-20 z-10 ">
+    <div className="flex flex-col md:flex-row md:gap-56 justify-center relative my-20 z-10 ">
     <div className="flex items-center justify-center h-4/5  mb-10 ">
                 <div className="relative mx-auto bg-gradient-to-b from-transparent rounded-full w-60 h-60 mt-5 overflow-hidden content-center">
                     <Image src={fotoFacu} layout="" alt="Foto de Facundo Rubino" objectFit="" />
@@ -46,7 +46,7 @@ const Hero = () => {
           <span className="gradient-text">Facu</span>
           <span className="text-transparent bg-clip-text bg-blue-900 dark:bg-white" >ndo Rubino</span>.
         </h2>
-        <div className="text-left w-full pt-1">
+        <div className="text-left w-full pt-1 flex justify-center" >
         <TypeAnimation
                         sequence={[
                             'Soy diseñador multimedia.',

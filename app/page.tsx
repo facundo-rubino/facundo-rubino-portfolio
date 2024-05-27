@@ -12,6 +12,7 @@ import Experience from "@/components/Experience";
 import useReadingProgress from "@/hooks/useReadingProgress";
 import Tools from "@/components/Tools";
 import About from "@/components/About";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const readingProgress = useReadingProgress();
@@ -43,6 +44,7 @@ export default function Home() {
      <Tools/>
      <RecentProjects/>
     </div>
+    <Footer/>
     </main>
     </>
 
