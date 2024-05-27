@@ -1,7 +1,9 @@
+
 import type { Metadata } from "next";
 import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import Loader from "@/components/Loader"; 
 
 const sourceSans = Source_Sans_3({ subsets: ["latin"] });
 
@@ -15,8 +17,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning>
 
       <body className={sourceSans.className}>
       <ThemeProvider

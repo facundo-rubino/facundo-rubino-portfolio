@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0 0% 95%;
     --foreground: 240 10% 3.9%;
 
     --card: 0 0% 100%;
@@ -80,10 +80,27 @@
 
 @layer utilities {
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+    @apply font-bold text-3xl md:text-4xl text-center;
   }
 
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
+}
+@layer components {
+  .gradient-text {
+    @apply 
+    font-extrabold uppercase
+    text-transparent bg-clip-text
+    bg-gradient-to-r from-orange-300 
+    to-orange-500
+  }
+  .hero{
+    background-color:hsla(0,0%,100%,0);
+    background-image:
+    radial-gradient(at 79% 28%, hsla(25,95%,53%,0.68) 0px, transparent 50%),
+    radial-gradient(at 34% 73%, hsla(31,97%,72%,0.74) 0px, transparent 50%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 243 243'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2' %3E%3C/feTurbulence%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' /%3E%3C/svg%3E")
+  }
+
 }
