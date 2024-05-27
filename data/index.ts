@@ -1,8 +1,4 @@
-export const navItems = [
-    { name: "Experience", link: "#experience",icon: '<FaLaptop />'  },
-    { name: "Projects", link: "#projects" ,icon: '<FaLaptopCode />' },
-    { name: "Contact", link: "#contact", icon: '<FaLaptop />'  },
-  ];
+
   
   export const techs = [
     {
@@ -174,10 +170,12 @@ export const navItems = [
     {
       id: 2,
       img: "/insta.svg",
+      link: "",
     },
     {
       id: 3,
       img: "/link.svg",
+      link: "https://www.linkedin.com/in/facundo-rubino      "
     },
   ];
 

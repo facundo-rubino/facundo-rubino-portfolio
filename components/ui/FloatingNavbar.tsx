@@ -25,6 +25,7 @@ export const FloatingNav = ({
   const [visible, setVisible] = useState(true); // Set initial state to true
   const [lastScrollY, setLastScrollY] = useState(0);
 
+
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
       const direction = current - lastScrollY;
@@ -83,6 +84,7 @@ export const FloatingNav = ({
     </AnimatePresence>
   );
 };
+
 
 
 

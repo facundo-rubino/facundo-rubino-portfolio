@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
@@ -6,7 +6,6 @@ import { FaLaptopCode, FaRegBuilding, FaRegUser } from "react-icons/fa";
 import Hero from "@/components/Hero";
 
 import RecentProjects from "@/components/RecentProjects";
-import { navItems } from "@/data";
 import WorkProcess from "@/components/WorkProcess";
 import Experience from "@/components/Experience";
 import useReadingProgress from "@/hooks/useReadingProgress";
@@ -16,16 +15,9 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   const readingProgress = useReadingProgress();
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-  }, []);
-
   return (
     <>
-    <span
+    <span  
         style={{ transform: `translateX(${readingProgress - 100}%)` }}
         className="z-50 fixed top-0 bg-gradient-to-r from-orange-300 to-orange-500 h-1 w-full bottom-0"
       />

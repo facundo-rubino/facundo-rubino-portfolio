@@ -4,7 +4,7 @@ import { experiencie, education } from '@/data'
 
 const Experience = () => {
   return (
-    <section id="experiencia">
+    <section id="experiencia" className="pt-10">
            <h1 className="heading">Mi formación, {' '}
         <span className="text-orange-500">mi camino</span>
         </h1>
