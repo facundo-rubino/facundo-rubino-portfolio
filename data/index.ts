@@ -112,25 +112,25 @@ export const navItems = [
       id: 1,
       title: "Melinder" ,
       des: "Aplicación que permite buscar autos en MercadoLibre de manera más óptima y personalizada.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/js.svg" ],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      img: "/proyecto_melinder.png",
+      iconLists: ["/js.svg", "/re.svg", "/tail.svg", "/fig.svg"],
+      link: "https://melinder-app.vercel.app/",
     },
     {
       id: 2,
       title: "Finales NBA ID",
-      des: "Id para el canal NBA Tv en el que se promocionan las finales de la NBA .",
-      img: "/nbaId.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+      des: "Id para el canal NBA Tv en el que se promocionan las finales de la NBA.",
+      img: "/proyecto_nba.png",
+      iconLists: ["/ps.svg", "/ai.svg", "/ae.svg"],
       link: "https://youtu.be/MJTZl8ys2kU",
     },
     {
       id: 3,
       title: "Club Cordón",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      des: "Desarrollo de piezas digitales para el Club Cordón.",
+      img: "/proyecto_cordon.png",
+      iconLists: ["/wp.svg", "/fig.svg", "/ps.svg", "/ai.svg", "/ae.svg", "/pr.svg"],
+      link: "https://youtu.be/TTMbOS0zyaU",
     },
   ];
   
@@ -167,13 +167,13 @@ export const navItems = [
   ];
   
   export const socialMedia = [
-    {
-      id: 1,
-      img: "/git.svg",
-    },
+    // {
+    //   id: 1,
+    //   img: "/git.svg",
+    // },
     {
       id: 2,
-      img: "/twit.svg",
+      img: "/insta.svg",
     },
     {
       id: 3,

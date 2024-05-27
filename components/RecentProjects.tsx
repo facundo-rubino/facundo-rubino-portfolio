@@ -18,10 +18,11 @@ const RecentProjects = () => {
             iconLists,
             link,
         }) => (
+            <a href={link} target="_blank">
             <div key={id} className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]">
-                <PinContainer title={link} href={link}>
+                <PinContainer title={link} >
                     <div className="relative flex items-center justify-center sm:w-96 w-[80vw]
-                    overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+                    overflow-hidden h-[20vh] lg:h-[30vh] mb-10" >
                         <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#123162d] '>
                             <img src="/bg.png" alt="bg-img"/>
                         </div>
@@ -35,8 +36,8 @@ const RecentProjects = () => {
                     <div className='flex items-center justify-between mt-7 mb-3'>
                         <div className='flex items-center'>
                     {iconLists.map((icon, index) => (
-                        <div key={index} className='border border-white/[0.2] rounded-full
-                        bg-black lg:2-10 lg:h-10 w-8 h-8 flex justify-center items-center'
+                        <div key={index} className='border border-black/[0.2] dark:border-white/[0.2] rounded-full
+                       bg-white dark:bg-black  lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center'
                         style={{transform: `translateX(-${5 * index * 2})px`}}
                         >
                             <img src={icon} alt='icon' className='p-2'/>
@@ -45,12 +46,13 @@ const RecentProjects = () => {
                         </div>
                         
                     <div className='flex items-center justify-center'>
-                    <p className='flex lg:text-xl md:text-xs text-sm text-orange-500 dark:text-orange-300'>Check Live Site</p>
-                    <FaLocationArrow className='ms-3' color='#CBACF9'/>
+                    <p className='flex lg:text-xl md:text-xs text-sm text-orange-500 '>Ver más</p>
+                    <FaLocationArrow className='ms-3' color='#f97316'/>
                     </div>
                     </div>
                     </PinContainer>
             </div>
+                    </a>
         ))}
         </section>
     </section>
