@@ -2,6 +2,7 @@ import { projects } from '@/data'
 import React from 'react'
 import { PinContainer } from './ui/3d-pin'
 import { FaLocationArrow } from 'react-icons/fa'
+import Link from 'next/link'
 
 const RecentProjects = () => {
   return (
@@ -18,7 +19,6 @@ const RecentProjects = () => {
             iconLists,
             link,
         }) => (
-            <a href={link} target="_blank">
             <div key={id} className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]">
                 <PinContainer title={link} >
                     <div className="relative flex items-center justify-center sm:w-96 w-[80vw]
@@ -37,7 +37,7 @@ const RecentProjects = () => {
                         <div className='flex items-center'>
                     {iconLists.map((icon, index) => (
                         <div key={index} className='border border-black/[0.2] dark:border-white/[0.2] rounded-full
-                       bg-white dark:bg-black  lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center'
+                        bg-white dark:bg-black  lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center'
                         style={{transform: `translateX(-${5 * index * 2})px`}}
                         >
                             <img src={icon} alt='icon' className='p-2'/>
@@ -45,14 +45,15 @@ const RecentProjects = () => {
                     ))}
                         </div>
                         
+                        <Link  href={`/projects/${id}`} key={id}>
                     <div className='flex items-center justify-center'>
                     <p className='flex lg:text-xl md:text-xs text-sm text-orange-500 '>Ver más</p>
                     <FaLocationArrow className='ms-3' color='#f97316'/>
                     </div>
+                    </Link>
                     </div>
                     </PinContainer>
             </div>
-                    </a>
         ))}
         </section>
     </section>
