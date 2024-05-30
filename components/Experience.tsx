@@ -1,3 +1,4 @@
+
 import React from 'react'
 import VerticalTimeline from './ui/VerticalTimeline'
 import { experiencie, education } from '@/data'

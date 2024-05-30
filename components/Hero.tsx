@@ -1,9 +1,9 @@
+'use client'
 import { TypeAnimation } from 'react-type-animation'
 import { FaArrowAltCircleRight} from "react-icons/fa";
 import React from 'react'
 import MagicButton from './ui/MagicButton';
 import { useTheme } from 'next-themes';
-import { TypewriterEffect } from './ui/TypeWriter';
 import fotoFacu from '@/public/fotoCirculo.png'
 import Image from 'next/image'
 
