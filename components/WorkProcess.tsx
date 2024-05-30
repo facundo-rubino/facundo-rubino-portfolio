@@ -13,7 +13,6 @@ const WorkProcess = () => {
             <Button key={card.id}
             borderRadius='0.5rem'
             className='flex-1 text-slate-900 dark:text-slate-100 border-neutral-200 dark:border-slate-800 '
-            duration={Math.floor(Math.random() * 10000) + 6500}
             >
                 <div className='flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2'>
                     <div  className=" lg:w-32 md:w-20 w-16">
