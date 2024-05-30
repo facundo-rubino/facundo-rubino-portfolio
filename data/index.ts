@@ -1,4 +1,9 @@
 
+export const navItems = [
+  { name: "Experiencia", link: "#experiencia" },
+  { name: "Proyectos", link: "#proyectos"  },
+  { name: "Contacto", link: "#contacto"},
+]
   
   export const techs = [
     {
@@ -105,26 +110,98 @@
   
   export const projects = [
     {
-      id: 1,
+      id: '1',
       title: "Melinder" ,
+      subTitle: "Aplicación web",
       des: "Aplicación que permite buscar autos en MercadoLibre de manera más óptima y personalizada.",
       img: "/proyecto_melinder.png",
-      iconLists: ["/js.svg", "/re.svg", "/tail.svg", "/fig.svg"],
+      techList:[
+          {
+            id: 1,
+            nombre: 'Javascript',
+            img: '/js.svg',
+          },
+          {
+            id: 2,
+            nombre: 'React',
+            img: '/re.svg',
+          },
+          {
+            id: 3,
+            nombre: 'TailwindCSS',
+            img: '/tail.svg',
+          },
+          {
+            id: 4,
+            nombre: 'Figma',
+            img: '/fig.svg',
+          },
+      ],
       link: "https://melinder-app.vercel.app/",
     },
     {
-      id: 2,
-      title: "Finales NBA ID",
+      id: "2",
+      title: "Finales NBA",
+      subTitle: "Id para canal de TV",
       des: "Id para el canal NBA Tv en el que se promocionan las finales de la NBA.",
       img: "/proyecto_nba.png",
-      iconLists: ["/ps.svg", "/ai.svg", "/ae.svg"],
+      techList:[
+        {
+          id: 1,
+          nombre: 'Photoshop',
+          img: '/ps.svg',
+        },
+        {
+          id: 2,
+          nombre: 'Illustrator',
+          img: '/ai.svg',
+        },
+        {
+          id: 3,
+          nombre: 'After Effects',
+          img: '/ae.svg',
+        },
+    ],
       link: "https://youtu.be/MJTZl8ys2kU",
     },
     {
-      id: 3,
+      id: "3",
       title: "Club Cordón",
+      subTitle: "Desarrollo de piezas digitales",
       des: "Desarrollo de piezas digitales para el Club Cordón.",
       img: "/proyecto_cordon.png",
+      techList:[
+        {
+          id: 1,
+          nombre: 'Wordpress',
+          img: '/wp.svg',
+        },
+        {
+          id: 2,
+          nombre: 'Figma',
+          img: '/fig.svg',
+        },
+        {
+          id: 3,
+          nombre: 'Illustrator',
+          img: '/ai.svg',
+        },
+        {
+          id: 4,
+          nombre: 'Photoshop',
+          img: '/ps.svg',
+        },
+        {
+          id: 5,
+          nombre: 'After Effects',
+          img: '/ae.svg',
+        },
+        {
+          id: 6,
+          nombre: 'Premiere',
+          img: '/pr.svg',
+        },
+    ],
       iconLists: ["/wp.svg", "/fig.svg", "/ps.svg", "/ai.svg", "/ae.svg", "/pr.svg"],
       link: "https://youtu.be/TTMbOS0zyaU",
     },
