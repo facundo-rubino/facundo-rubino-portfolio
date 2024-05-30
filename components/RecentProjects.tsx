@@ -16,7 +16,7 @@ const RecentProjects = () => {
             title,
             des,
             img,
-            iconLists,
+            techList,
             link,
         }) => (
             <div key={id} className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]">
@@ -35,12 +35,12 @@ const RecentProjects = () => {
 
                     <div className='flex items-center justify-between mt-7 mb-3'>
                         <div className='flex items-center'>
-                    {iconLists.map((icon, index) => (
+                    {techList.map((tech, index) => (
                         <div key={index} className='border border-black/[0.2] dark:border-white/[0.2] rounded-full
                         bg-white dark:bg-black  lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center'
                         style={{transform: `translateX(-${5 * index * 2})px`}}
                         >
-                            <img src={icon} alt='icon' className='p-2'/>
+                            <img src={tech.img} alt='icon' className='p-2'/>
                         </div>
                     ))}
                         </div>
