@@ -108,36 +108,74 @@ export const navItems = [
     },
 ]
   
-  export const projects = [
+export const projects = [
     {
       id: '1',
       title: "Melinder" ,
       subTitle: "Aplicación web",
       des: "Aplicación que permite buscar autos en MercadoLibre de manera más óptima y personalizada.",
+      desLarga:`
+      Generar una aplicación Web consumiento los servicios de la API de Mercado Libre.
+      La misma debe ser responsive para ser utilizada en cualquier dispositivo.
+      
+
+    `,
+      planteamiento:`Brindar al usuario una versión más personalizada de Mercado Libre, 
+      permitiendo la compra de autos de manera más óptima y personalizada. Filtrar las búsquedas borrando
+      elementos que no le interesen, para que cuando la repitas, ya no estén ahí y solo veas lo que interesa o lo nuevo.`,
+      
+      
+      
       img: "/proyecto_melinder.png",
       techList:[
           {
             id: 1,
-            nombre: 'Javascript',
-            img: '/js.svg',
-          },
-          {
-            id: 2,
             nombre: 'React',
             img: '/re.svg',
           },
           {
-            id: 3,
+            id: 2,
             nombre: 'TailwindCSS',
             img: '/tail.svg',
           },
           {
-            id: 4,
+            id: 3,
             nombre: 'Figma',
             img: '/fig.svg',
           },
       ],
+      moreInfo: [
+  {
+    title: "Collaborative Editing",
+    description:
+      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+  content: ''
+    },
+  {
+    title: "Real time changes",
+    description:
+      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      content: ''
+  },
+  {
+    title: "Version control",
+    description:
+      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      content: ''
+  },
+  {
+    title: "Running out of content",
+    description:
+      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      content: ''
+  },
+],
       link: "https://melinder-app.vercel.app/",
+      techExplanation:`
+      Esta aplicación fue realizada con React componetizando para reutilizar código y manejando estados, lo que mejora mucho su performance y velocidad, aprovechando también la utilización del Virtual DOM.
+      TailwindCSS fue la elección para los estilos, ya que es un framework que nos permite crear diseños complejos sin la necesidad de escribir CSS de manera rápida y sencilla.
+      Figma fue la herramienta utilizada para el diseño de la interfaz de usuario.
+      `,
     },
     {
       id: "2",
@@ -145,6 +183,7 @@ export const navItems = [
       subTitle: "Id para canal de TV",
       des: "Id para el canal NBA Tv en el que se promocionan las finales de la NBA.",
       img: "/proyecto_nba.png",
+      projectType : 'Video',
       techList:[
         {
           id: 1,
@@ -161,6 +200,32 @@ export const navItems = [
           nombre: 'After Effects',
           img: '/ae.svg',
         },
+    ],
+    moreInfo: [
+      {
+        title: "Collaborative Editing",
+        description:
+          "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      content: ''
+        },
+      {
+        title: "Real time changes",
+        description:
+          "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+          content: ''
+      },
+      {
+        title: "Version control",
+        description:
+          "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+          content: ''
+      },
+      {
+        title: "Running out of content",
+        description:
+          "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+          content: ''
+      },
     ],
       link: "https://youtu.be/MJTZl8ys2kU",
     },
@@ -201,6 +266,32 @@ export const navItems = [
           nombre: 'Premiere',
           img: '/pr.svg',
         },
+    ],
+    moreInfo: [
+      {
+        title: "Collaborative Editing",
+        description:
+          "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      content: ''
+        },
+      {
+        title: "Real time changes",
+        description:
+          "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+          content: ''
+      },
+      {
+        title: "Version control",
+        description:
+          "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+          content: ''
+      },
+      {
+        title: "Running out of content",
+        description:
+          "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+          content: ''
+      },
     ],
       iconLists: ["/wp.svg", "/fig.svg", "/ps.svg", "/ai.svg", "/ae.svg", "/pr.svg"],
       link: "https://youtu.be/TTMbOS0zyaU",
