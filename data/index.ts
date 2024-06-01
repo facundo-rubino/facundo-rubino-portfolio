@@ -3,9 +3,9 @@ export const navItems = [
   { name: "Experiencia", link: "#experiencia" },
   { name: "Proyectos", link: "#proyectos"  },
   { name: "Contacto", link: "#contacto"},
-]
+];
   
-  export const techs = [
+export const techs = [
     {
         name: 'HTML',
         icon: 'SiHtml',
@@ -72,18 +72,23 @@ export const navItems = [
         color: 'bg-purple-500',
     },
     {
-        name: 'Adobe Photoshop',
+        name: 'Photoshop',
         icon: 'SiAdobephotoshop',
         color: 'bg-blue-500',
     },
     {
-        name: 'Adobe Illustrator',
+        name: 'Illustrator',
         icon: 'SiAdobeillustrator',
         color: 'bg-blue-500',
     },
     {
-        name: 'Adobe After Effects',
+        name: 'After Effects',
         icon: 'SiAdobeaftereffects',
+        color: 'bg-blue-500',
+    },
+    {
+        name: 'Premiere Pro',
+        icon: 'SiPremierePro',
         color: 'bg-blue-500',
     },
     {
@@ -102,11 +107,21 @@ export const navItems = [
         color: 'bg-gray-900',
     },
     {
+        name: '.NET 8.0',
+        icon: 'SiDotNet',
+        color: 'bg-gray-900',
+    },
+    {
         name: 'EntityFramework',
         icon: 'SiEntityframework',
         color: 'bg-gray-900',
     },
-]
+    {
+        name: 'Wordpress',
+        icon: 'SiWordpress',
+        color: 'bg-gray-900',
+    },
+];
   
 export const projects = [
     {
@@ -121,6 +136,7 @@ export const projects = [
       permitiendo la compra de autos de manera más óptima y personalizada. Filtrar las búsquedas borrando
       elementos que no le interesen, para que cuando la repitas, ya no estén ahí y solo veas lo que interesa o lo nuevo.`,
       img: "/proyecto_melinder.png",
+      hero_img: "/hero_melinder.png",
       projectType : 'Aplicación',
       techList:[
           {
@@ -152,6 +168,7 @@ export const projects = [
       subTitle: "ID para canal",
       des: "ID para el canal NBA Tv en el que se promocionan las finales de la NBA.",
       img: "/proyecto_nba.png",
+      hero_img: "/hero_nbatv.png",
       projectType : 'Video',
       techList:[
         {
@@ -170,7 +187,7 @@ export const projects = [
           img: '/ae.svg',
         },
     ],
-      link: "https://youtu.be/MJTZl8ys2kU",
+    embedLink: "MJTZl8ys2kU?si=LJKlvlb3nidH0yeI",
     },
     {
       id: "3",
@@ -178,7 +195,7 @@ export const projects = [
       subTitle: "Proyecto integrador",
       des: "Desarrollo de piezas digitales para el Club Cordón.",
       img: "/proyecto_cordon.png",
-      projectType : 'Diario',
+      projectType : 'Video',
       techList:[
         {
           id: 1,
@@ -212,7 +229,7 @@ export const projects = [
         },
     ],
       iconLists: ["/wp.svg", "/fig.svg", "/ps.svg", "/ai.svg", "/ae.svg", "/pr.svg"],
-      link: "https://youtu.be/TTMbOS0zyaU",
+      embedLink: "TTMbOS0zyaU?si=S9v4PUWXzUXLdV5u",
     },
     {
       id: "4",
@@ -228,7 +245,6 @@ export const projects = [
           img: '/id.svg',
         },
     ],
-      link: "https://youtu.be/MJTZl8ys2kU",
     },
     {
       id: "5",
@@ -236,7 +252,7 @@ export const projects = [
       subTitle: "Infografía",
       des: "Infografía que explica el gran cambio de los Rockets en la NBA actual .",
       img: "/proyecto_rockets.png",
-      projectType : 'Diario',
+      projectType : 'Infografia',
       techList:[
         {
           id: 1,
@@ -249,7 +265,7 @@ export const projects = [
           img: '/ai.svg',
         },
     ],
-      link: "https://youtu.be/MJTZl8ys2kU",
+      pieza: "/Infografia.png",
     },
     {
       id: "6",
@@ -257,7 +273,7 @@ export const projects = [
       subTitle: "Pieza audiovisual",
       des: "Pieza audiovisual de análisis táctico sobre la SuperBowl 2017.",
       img: "/proyecto_nfl.png",
-      projectType : 'Diario',
+      projectType : 'Video',
       techList:[
         {
           id: 1,
@@ -275,12 +291,11 @@ export const projects = [
           img: '/ae.svg',
         },
     ],
-      link: "https://youtu.be/MJTZl8ys2kU",
+      embedLink: "p1kv7pjxgA4?si=fSPIplWrzlnHMqcI",
     },
-  ];
+];
   
-  
-  export const workProcess = [
+export const workProcess = [
     {
       id: 1,
       title: "Conceptualización      ",
@@ -309,9 +324,9 @@ export const projects = [
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },
-  ];
+];
   
-  export const socialMedia = [
+export const socialMedia = [
     // {
     //   id: 1,
     //   img: "/git.svg",
@@ -326,9 +341,9 @@ export const projects = [
       img: "/link.svg",
       link: "https://www.linkedin.com/in/facundo-rubino      "
     },
-  ];
+];
 
-  export const education = [
+export const education = [
     {
         company: "Universidad ORT Uruguay | Abr 2022 - Actualidad",
         title: 'Analista en Tecnologías de la Información',
@@ -345,7 +360,7 @@ export const projects = [
         para luego aplicar conocimientos de desarrollo Frontend adquiridos. Visualizar el diseño
         desde una perspectiva técnica y comprender cómo se traduce en código.`
     },
-]
+];
 
 export const experiencie = [
   {
@@ -367,4 +382,109 @@ export const experiencie = [
       adquirí experiencia en HTML, CSS, JavaScript, frameworks populares, diseño responsivo,
       UI/UX, desarrollo con WordPress y la creación de mailings y landings.`
   },
-]
+];
+
+export const serindipiaImages = [
+  {
+    title: "Serindipia - Tapa",
+    link:"",
+    thumbnail:
+      "/serindipiaCaptures/serindipia-0.jpg",
+  },
+  {
+    title: "Serindipia - Sección deportiva",
+    link:"",
+    thumbnail:
+      "/serindipiaCaptures/serindipia-1.jpg",
+  },
+  {
+    title: "Serindipia - Sección deportiva",
+    link:"",
+    thumbnail:
+      "/serindipiaCaptures/serindipia-4.jpg",
+  },
+  {
+    title: "Serindipia - Sección política",
+    link:"",
+    thumbnail:
+      "/serindipiaCaptures/serindipia-5.jpg",
+  },
+  {
+    title: "Serindipia - Sección política",
+    link:"",
+    thumbnail:
+      "/serindipiaCaptures/serindipia-7.jpg",
+  },
+  {
+    title: "Serindipia - Sección política",
+    link:"",
+    thumbnail:
+      "/serindipiaCaptures/serindipia-8.jpg",
+  },
+  {
+    title: "Serindipia - Sección economía",
+    link:"",
+    thumbnail:
+      "/serindipiaCaptures/serindipia-9.jpg",
+  },
+  {
+    title: "Serindipia - Sección economía",
+    link:"",
+    thumbnail:
+      "/serindipiaCaptures/serindipia-10.jpg",
+  },
+  {
+    title: "Serindipia - Sección economía",
+    link:"",
+    thumbnail:
+      "/serindipiaCaptures/serindipia-11.jpg",
+  },
+  {
+    title: "Serindipia - Sección economía",
+    link:"",
+    thumbnail:
+      "/serindipiaCaptures/serindipia-12.jpg",
+  },
+  {
+    title: "Serindipia - Sección tecnología",
+    link:"",
+    thumbnail:
+      "/serindipiaCaptures/serindipia-13.jpg",
+  },
+  {
+    title: "Serindipia - Sección tecnología",
+    link:"",
+    thumbnail:
+      "/serindipiaCaptures/serindipia-15.jpg",
+  },
+  {
+    title: "Serindipia - Sección tecnología",
+    link:"",
+    thumbnail:
+      "/serindipiaCaptures/serindipia-16.jpg",
+  },
+  {
+    title: "Serindipia - Sección salud",
+    link:"",
+    thumbnail:
+      "/serindipiaCaptures/serindipia-17.jpg",
+  },
+  {
+    title: "Serindipia - Sección salud",
+    link:"",
+    thumbnail:
+      "/serindipiaCaptures/serindipia-18.jpg",
+  },
+  {
+    title: "Serindipia - Sección salud",
+    link:"",
+    thumbnail:
+      "/serindipiaCaptures/serindipia-19.jpg",
+  },
+  {
+    title: "Serindipia - Sección salud",
+    link:"",
+    thumbnail:
+      "/serindipiaCaptures/serindipia-20.jpg",
+  },
+];
