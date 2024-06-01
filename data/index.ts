@@ -113,20 +113,15 @@ export const projects = [
       id: '1',
       title: "Melinder" ,
       subTitle: "Aplicación web",
-      des: "Aplicación que permite buscar autos en MercadoLibre de manera más óptima y personalizada.",
-      desLarga:`
-      Generar una aplicación Web consumiento los servicios de la API de Mercado Libre.
+      des: "Aplicación que permite buscar autos en MercadoLibre de manera más óptima.",
+      proposito:`Generar una aplicación Web consumiento los servicios de la API de Mercado Libre.
       La misma debe ser responsive para ser utilizada en cualquier dispositivo.
-      
-
     `,
       planteamiento:`Brindar al usuario una versión más personalizada de Mercado Libre, 
       permitiendo la compra de autos de manera más óptima y personalizada. Filtrar las búsquedas borrando
       elementos que no le interesen, para que cuando la repitas, ya no estén ahí y solo veas lo que interesa o lo nuevo.`,
-      
-      
-      
       img: "/proyecto_melinder.png",
+      projectType : 'Aplicación',
       techList:[
           {
             id: 1,
@@ -144,32 +139,6 @@ export const projects = [
             img: '/fig.svg',
           },
       ],
-      moreInfo: [
-  {
-    title: "Collaborative Editing",
-    description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
-  content: ''
-    },
-  {
-    title: "Real time changes",
-    description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
-      content: ''
-  },
-  {
-    title: "Version control",
-    description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-      content: ''
-  },
-  {
-    title: "Running out of content",
-    description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-      content: ''
-  },
-],
       link: "https://melinder-app.vercel.app/",
       techExplanation:`
       Esta aplicación fue realizada con React componetizando para reutilizar código y manejando estados, lo que mejora mucho su performance y velocidad, aprovechando también la utilización del Virtual DOM.
@@ -179,9 +148,9 @@ export const projects = [
     },
     {
       id: "2",
-      title: "Finales NBA",
-      subTitle: "Id para canal de TV",
-      des: "Id para el canal NBA Tv en el que se promocionan las finales de la NBA.",
+      title: "NBA TV",
+      subTitle: "ID para canal",
+      des: "ID para el canal NBA Tv en el que se promocionan las finales de la NBA.",
       img: "/proyecto_nba.png",
       projectType : 'Video',
       techList:[
@@ -201,40 +170,15 @@ export const projects = [
           img: '/ae.svg',
         },
     ],
-    moreInfo: [
-      {
-        title: "Collaborative Editing",
-        description:
-          "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
-      content: ''
-        },
-      {
-        title: "Real time changes",
-        description:
-          "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
-          content: ''
-      },
-      {
-        title: "Version control",
-        description:
-          "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-          content: ''
-      },
-      {
-        title: "Running out of content",
-        description:
-          "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-          content: ''
-      },
-    ],
       link: "https://youtu.be/MJTZl8ys2kU",
     },
     {
       id: "3",
       title: "Club Cordón",
-      subTitle: "Desarrollo de piezas digitales",
+      subTitle: "Proyecto integrador",
       des: "Desarrollo de piezas digitales para el Club Cordón.",
       img: "/proyecto_cordon.png",
+      projectType : 'Diario',
       techList:[
         {
           id: 1,
@@ -267,34 +211,71 @@ export const projects = [
           img: '/pr.svg',
         },
     ],
-    moreInfo: [
-      {
-        title: "Collaborative Editing",
-        description:
-          "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
-      content: ''
-        },
-      {
-        title: "Real time changes",
-        description:
-          "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
-          content: ''
-      },
-      {
-        title: "Version control",
-        description:
-          "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-          content: ''
-      },
-      {
-        title: "Running out of content",
-        description:
-          "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-          content: ''
-      },
-    ],
       iconLists: ["/wp.svg", "/fig.svg", "/ps.svg", "/ai.svg", "/ae.svg", "/pr.svg"],
       link: "https://youtu.be/TTMbOS0zyaU",
+    },
+    {
+      id: "4",
+      title: "Serindipia",
+      subTitle: "Diseño editorial",
+      des: "Diseño editorial para la elaboración de un diario sobre distinas temáticas.",
+      img: "/proyecto_serindipia.png",
+      projectType : 'Diario',
+      techList:[
+        {
+          id: 1,
+          nombre: 'InDesign',
+          img: '/id.svg',
+        },
+    ],
+      link: "https://youtu.be/MJTZl8ys2kU",
+    },
+    {
+      id: "5",
+      title: "Houston Rockets",
+      subTitle: "Infografía",
+      des: "Infografía que explica el gran cambio de los Rockets en la NBA actual .",
+      img: "/proyecto_rockets.png",
+      projectType : 'Diario',
+      techList:[
+        {
+          id: 1,
+          nombre: 'Photoshop',
+          img: '/ps.svg',
+        },
+        {
+          id: 2,
+          nombre: 'Illustrator',
+          img: '/ai.svg',
+        },
+    ],
+      link: "https://youtu.be/MJTZl8ys2kU",
+    },
+    {
+      id: "6",
+      title: "NFL",
+      subTitle: "Pieza audiovisual",
+      des: "Pieza audiovisual de análisis táctico sobre la SuperBowl 2017.",
+      img: "/proyecto_nfl.png",
+      projectType : 'Diario',
+      techList:[
+        {
+          id: 1,
+          nombre: 'Illustrator',
+          img: '/ai.svg',
+        },
+        {
+          id: 2,
+          nombre: 'Premiere',
+          img: '/pr.svg',
+        },
+        {
+          id: 3,
+          nombre: 'After Effects',
+          img: '/ae.svg',
+        },
+    ],
+      link: "https://youtu.be/MJTZl8ys2kU",
     },
   ];
   

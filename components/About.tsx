@@ -10,14 +10,14 @@ const About = () => {
       <p>
       La poderosa combinación de la <b>programación</b> con las <b>artes gráficas</b> fue algo que siempre me interesó.
                             Creo firmemente que al fusionar estos dos campos se crean perfiles con un <b>diferencial único</b> ,
-                            capaces de  desarrollar soluciones visuales <b>interactivas</b> y <b>optimizadas</b>, integrando <b>estética</b>
+                            capaces de  desarrollar soluciones visuales <b>interactivas</b> y <b>optimizadas</b>, integrando <b> estética </b>
                             y <b>funcionalidad</b> en un entorno digital.<br /><br />
                          
       </p>
       <p>
       En mis procesos creativos intento siempre basarme en una buena <b>estructura </b>
                             y <b>organización</b> de la pieza, combinado esto con un buen <b>dominio del layout</b>,
-                            para tener el control sobre el objetivo a realizar, con el fin de generar
+                            para tener el control sobre el objetivo a realizar, para así poder generar
                             un producto final <b>dinámico, entendible y atractivo</b> .
       </p>
       </div>

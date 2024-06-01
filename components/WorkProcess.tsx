@@ -20,7 +20,7 @@ const WorkProcess = () => {
                         </div>
                     <div className='lg:ms-5'>
                         <h1 className='text-start text-xl md:text-2xl font-bold'>{card.title}</h1>
-                        <p className='text-start text-slate-700 dark:text-white-100 mt-3 font-semibold'>{card.desc}</p>
+                        <p className='text-start text-slate-700 dark:text-white-100 mt-3 font-semibold md:text-lg'>{card.desc}</p>
                     </div>
                 </div>
             </Button>
