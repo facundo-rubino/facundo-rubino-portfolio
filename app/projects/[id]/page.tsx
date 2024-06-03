@@ -15,7 +15,7 @@ import { HeroParallax } from '@/components/ui/HeroParallax';
 import Footer from '@/components/Footer';
 import MagicButton from '@/components/ui/MagicButton';
 import Card from '@/components/ui/Card';
-import Link from 'next/link';
+
 
 const ProjectDetail = () => {
     const params = useParams();
@@ -82,26 +82,50 @@ const ProjectDetail = () => {
         <p className="text-center dark:text-slate-200 w-8/12 m-auto">{project!.techExplanation}</p>
       </section>
  
- <section className='py-24 lg:py-52 '>
-      <h1 className=" heading text-orange-500 pb-10">Resultado {' '} 
+ <section className='pt-24 lg:pt-32 pb-10'>
+      <h1 className=" heading text-orange-500 pb-5">Resultado {' '} 
         <span className="text-slate-700 dark:text-slate-100" >final</span>
         </h1>
         {project!.projectType == 'Video'  ?
-      <section className='h-[30rem] lg:h-[60rem] '>
+      <section className='h-[30rem] lg:h-[60rem] pb-10'>
         <YouTubeEmbed embedId={project!.embedLink}/>
         </section>
         : ''}
         
         {project!.projectType == 'Diario'  ?
-        <section className='h-[60rem]' >
+        <section className='h-[60rem] pb-10' >
         <HeroParallax products={serindipiaImages} />
         </section> :''}
         </section>
 
+ {project!.projectType == 'Web'  ? 
+<section className="pb-24 lg:pb-32">
+<p className="text-center dark:text-slate-200 w-8/12 m-auto">Conocé la web clickeando el icono aquí debajo</p>
+        <a href={project!.link}  target="_blank" className="flex justify-center w-full ">
+        <img  
+        className="w-14 pt-6"
+        src={project!.webIcon}
+          alt="hero"
+          />
+        </a>
+</section> :''}
+
+ {project!.projectType == 'Infografia'  ? 
+<section className="pb-24 lg:pb-32">
+<Image
+          src={project!.pieza!}
+          alt="hero"
+          height={720}
+          width={1200}
+          className="mx-auto rounded-2xl object-cover h-full object-left-top p-1"
+          draggable={false}
+        />
+
+</section> :''}
  </section>
 
         {project!.projectType != 'Diario'  ?
-<section className="flex flex-col bg-black-200  py-10">
+<section className="flex flex-col py-10  dark:bg-black-100">
 <h1 className=" heading text-slate-700 dark:text-slate-100 pb-5">¿Desea ver otro proyecto? {' '} 
         </h1>
 <div className="flex flex-col items-center">

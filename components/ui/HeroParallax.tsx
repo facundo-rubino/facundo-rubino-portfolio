@@ -10,6 +10,8 @@ import {
 import Image from "next/image";
 import Footer from "../Footer";
 import Link from "next/link";
+import MagicButton from "./MagicButton";
+import { FaArrowRight } from "react-icons/fa";
 
 export const HeroParallax = ({
   products,
@@ -100,7 +102,18 @@ export const HeroParallax = ({
         </motion.div>
       </motion.div>
     </div>
-    <Link  href={`/projects/5`} > next</Link>
+    <div className="flex flex-col items-center pt-10 bg-slate-100 dark:bg-black-100">
+<p className='text-black dark:text-white-200 md:mt-3  text-center my-5 md:my-0'>
+            Haga click debajo para ir al siguiente proyecto. </p>
+        <a href='/projects/5' >
+            <MagicButton
+            title='Siguiente'
+            icon={<FaArrowRight/>}
+            position='right'            
+
+            />
+            </a>
+</div>
      <Footer/>
 </>
   );

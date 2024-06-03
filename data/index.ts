@@ -137,7 +137,8 @@ export const projects = [
       planteamiento:`Como son usuarios frecuentes de Mercado Libre, se eligió que la aplicación tenga la misma paleta cromática, para que se sientan familiarizados. La app permitirá filtrar las búsquedas borrando elementos que no le interesen, para que cuando la repitas, ya no estén ahí y solo veas lo que interesa o lo nuevo.`,
       img: "/proyecto_melinder.png",
       hero_img: "/hero_melinder.png",
-      projectType : 'Aplicación',
+      projectType : 'Web',
+      webIcon: '/melinderIcon.png',
       techList:[
           {
             id: 1,
