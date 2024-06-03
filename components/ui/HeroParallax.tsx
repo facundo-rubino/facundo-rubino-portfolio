@@ -8,8 +8,8 @@ import {
   MotionValue,
 } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import Footer from "../Footer";
+import Link from "next/link";
 
 export const HeroParallax = ({
   products,
@@ -100,6 +100,7 @@ export const HeroParallax = ({
         </motion.div>
       </motion.div>
     </div>
+    <Link  href={`/projects/5`} > next</Link>
      <Footer/>
 </>
   );
