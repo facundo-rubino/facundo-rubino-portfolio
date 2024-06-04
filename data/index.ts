@@ -139,7 +139,7 @@ export const projects = [
       hero_img: "/hero_melinder.png",
       ampliation_img:"/ampliationMelinder.png",
       projectType : 'Web',
-      webIcon: '/melinderIcon.png',
+      webIcon: '/MelinderIcon.png',
       techList:[
           {
             id: 1,
