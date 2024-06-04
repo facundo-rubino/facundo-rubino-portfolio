@@ -100,11 +100,11 @@ const ProjectDetail = () => {
 
  {project!.projectType == 'Web'  ? 
 <section className="py-8">
-<p className="text-center dark:text-slate-200 w-8/12 m-auto">Conocé la web clickeando el icono aquí debajo</p>
+<p className="text-center dark:text-slate-200 w-8/12 m-auto">Conocé la web clickeando en la captura de la misma</p>
         <a href={project!.link}  target="_blank" className="flex justify-center w-full ">
         <img  
-        className="w-14 pt-6"
-        src={project!.webIcon}
+        className=" pt-6"
+        src={project!.hero_img}
           alt="hero"
           />
         </a>
