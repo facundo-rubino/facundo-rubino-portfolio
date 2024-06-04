@@ -8,7 +8,7 @@ const RecentProjects = () => {
   return (
     <section id="proyectos" className='pt-10'>
         <h1 className="heading">Algunos de mis {' '}
-        <span className="text-orange-500">últimos proyectos</span>
+        <span className="text-orange-500"> proyectos</span>
         </h1>
         <section className="flex flex-wrap items-center justify-center p-4 gap-16 ">
         {projects.map(({

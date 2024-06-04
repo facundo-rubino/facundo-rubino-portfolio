@@ -43,23 +43,23 @@ const ProjectDetail = () => {
         }
       >
         <Image
-          src={project!.img!}
+          src={project!.ampliation_img}
           alt="hero"
           height={720}
           width={1400}
-          className="mx-auto rounded-2xl object-cover h-full object-left-top p-1"
+          className="mx-auto rounded-2xl object-cover h-full object-center-top p-1"
           draggable={false}
         />
           </ContainerScroll>
           </div>
-    {/* {main} */}
+    {/* main */}
  <section className='dark:bg-black-100  pt-20'>
  <section className='w-full pb-40 '>
  <h1 className="heading pb-10">Un poco más sobre {' '}
         <span className="text-orange-500">el proyecto</span>
         </h1>
 
-<div className="flex flex-col lg:flex-row items-center justify-center w-full gap-20 lg:gap-48 px-8">
+<div className="flex flex-col lg:flex-row items-center justify-around w-full gap-20 lg:gap-20 px-8">
         <Card title="¿Qué?" icon={<MagicButton title="Propósito"/>} description={project!.proposito}>
           <CanvasRevealEffect animationSpeed={5} containerClassName="bg-orange-700" colors={[[125, 211, 252]]}/>
         </Card>
@@ -83,8 +83,8 @@ const ProjectDetail = () => {
       </section>
  
  <section className='pt-24 lg:pt-32 pb-10'>
-      <h1 className=" heading text-orange-500 pb-5">Resultado {' '} 
-        <span className="text-slate-700 dark:text-slate-100" >final</span>
+      <h1 className=" heading text-orange-500 pb-4">Resultado {' '} 
+        <span className="text-slate-700 dark:text-slate-100 " >final</span>
         </h1>
         {project!.projectType == 'Video'  ?
       <section className='h-[30rem] lg:h-[60rem] pb-10'>
@@ -96,10 +96,10 @@ const ProjectDetail = () => {
         <section className='h-[60rem] pb-10' >
         <HeroParallax products={serindipiaImages} />
         </section> :''}
-        </section>
+
 
  {project!.projectType == 'Web'  ? 
-<section className="pb-24 lg:pb-32">
+<section className="py-8">
 <p className="text-center dark:text-slate-200 w-8/12 m-auto">Conocé la web clickeando el icono aquí debajo</p>
         <a href={project!.link}  target="_blank" className="flex justify-center w-full ">
         <img  
@@ -109,6 +109,8 @@ const ProjectDetail = () => {
           />
         </a>
 </section> :''}
+        </section>
+
 
  {project!.projectType == 'Infografia'  ? 
 <section className="pb-24 lg:pb-32">
@@ -129,7 +131,7 @@ const ProjectDetail = () => {
 <h1 className=" heading text-slate-700 dark:text-slate-100 pb-5">¿Desea ver otro proyecto? {' '} 
         </h1>
 <div className="flex flex-col items-center">
-<p className='text-black dark:text-white-200 md:mt-3  text-center my-5 md:my-0'>
+<p className='text-black dark:text-white-200 md:mt-3  text-center mb-5 md:my-0'>
             Haga click debajo para ir al siguiente proyecto. </p>
         <a href={`/projects/${project!.id != "6" ? Number(project!.id) + 1 : 1}`} >
             <MagicButton

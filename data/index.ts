@@ -137,6 +137,7 @@ export const projects = [
       planteamiento:`Como son usuarios frecuentes de Mercado Libre, se eligió que la aplicación tenga la misma paleta cromática, para que se sientan familiarizados. La app permitirá filtrar las búsquedas borrando elementos que no le interesen, para que cuando la repitas, ya no estén ahí y solo veas lo que interesa o lo nuevo.`,
       img: "/proyecto_melinder.png",
       hero_img: "/hero_melinder.png",
+      ampliation_img:"/ampliationMelinder.png",
       projectType : 'Web',
       webIcon: '/melinderIcon.png',
       techList:[
@@ -181,6 +182,7 @@ export const projects = [
       movimiento en cada una de las escenas, para darle el dinamismo y emoción esperado a un evento de esta magnitud.`,
       img: "/proyecto_nba.png",
       hero_img: "/hero_nbatv.png",
+      ampliation_img:"/ampliationNBATV.png",
       projectType : 'Video',
       techList:[
         {
@@ -217,6 +219,7 @@ export const projects = [
       Realizado mediante CMS para que los funcionarios no dependan de nadie para modificar la sección de noticias y tienda online. Generación de contenido digital para Twitch, TikTok e instagram.      
       `,
       img: "/proyecto_cordon.png",
+      ampliation_img:"/ampliationCordon.png",
       projectType : 'Video',
       techList:[
         {
@@ -271,6 +274,7 @@ export const projects = [
       Además, se definen  colores identificatorios para cada sección, haciendo que sea una mejor experiencia para el usuario.       `,
       img: "/proyecto_serindipia.png",
       hero_img: "/hero_serindipia.jpg",
+      ampliation_img:"/ampliationSerindipia.png",
       projectType : 'Diario',
       techList:[
         {
@@ -302,6 +306,7 @@ export const projects = [
       `,
       img: "/proyecto_rockets.png",
       hero_img: "/hero_info.png",
+      ampliation_img:"/ampliationRockets.png",
       projectType : 'Infografia',
       techList:[
         {
@@ -336,6 +341,7 @@ export const projects = [
       Esto ayudaría a que el tracking de los objetos seleccionados sea más sencillo y automático, además de ser un deporte conozco y que disfruto mucho.
       `,
       projectType : 'Video',
+      ampliation_img:"/ampliationNFL.png",
       techList:[
         {
           id: 1,
@@ -354,9 +360,7 @@ export const projects = [
         },
     ],
     techExplanation:`
-    Es un proyecto realizado casi en su totalidad con Adobe Illusrator, cuidando hasta los más
-    mínimos detalles, creando vectores que pudiesen explicar lo ocurrido. Adobe Photoshop fue utilizado para
-    la optimización de las fotografías.
+    Para este proyecto primero se trabajaron los clips en Premiere, recortandolos y ajustando su iluminación. Posteriormente, con Illustrator se generarían los gráficos a utilizar en el video que fue realizado en After Effects.
     `,
       embedLink: "p1kv7pjxgA4?si=fSPIplWrzlnHMqcI",
     },
